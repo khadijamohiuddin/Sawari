@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/light_blue_background"
+    tools:context="com.example.android.so.WelcomeActivity">
+
+    <ImageView
+    android:id="@+id/car_image"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/car"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="150dp"
+    android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/myTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        android:layout_below="@id/car_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/myTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/myTextView1"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loginbutton"/>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/signIn"
+        android:background="@drawable/loginbutton"/>
+
+
+</RelativeLayout>
